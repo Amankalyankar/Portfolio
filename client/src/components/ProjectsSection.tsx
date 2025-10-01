@@ -16,7 +16,7 @@ const ProjectsSection = () => {
       tags: ["Flask", "PostgreSQL", "Tailwind CSS", "Jinja2"],
       delay: 1.2,
       liveUrl: "https://laterlist-m513.onrender.com/",
-      githubUrl: "https://github.com/Aman-627/LaterList",
+      githubUrl: "https://github.com/Amankalyankar/LaterList",
     },
   ];
 
