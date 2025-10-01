@@ -70,7 +70,7 @@ const ContactSection = () => {
   ];
 
   const socialLinks = [
-    { name: 'GitHub', icon: Github, href: 'https://github.com/Aman-627', hoverClass: 'hover:bg-black' },
+    { name: 'GitHub', icon: Github, href: 'https://github.com/Amankalyankar', hoverClass: 'hover:bg-black' },
     { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/a.man_kalyankar', hoverClass: 'hover-bg-instagram' },
   ];
   
