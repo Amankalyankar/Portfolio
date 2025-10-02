@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { ExternalLink, Github } from "lucide-react";
 import Laterlist_photo from "@/assets/LaterList.png";
+import TravelGenie_photo from "@/assets/TravelGenie.png";
 
 const ProjectsSection = () => {
   const [visibleProjects, setVisibleProjects] = useState<number[]>([]);
