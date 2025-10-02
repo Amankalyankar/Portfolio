@@ -9,14 +9,14 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "LaterList",
+      title: "TravelGenie",
       description:
-        "A full-stack web app for creating a private media watchlist, Provides personalized recommendations.",
-      image: Laterlist_photo,
-      tags: ["Flask", "PostgreSQL", "Tailwind CSS", "Jinja2"],
+        "A travel assistant that crafts personalized, day-by-day itineraries in seconds. It uses AI to build the perfect trip based on your destination and interests.",
+      image: TravelGenie_photo,
+      tags: ["Flask", "React", ],
       delay: 1.2,
-      liveUrl: "https://laterlist-m513.onrender.com/",
-      githubUrl: "https://github.com/Amankalyankar/LaterList",
+      liveUrl: "https://travelgenie123.netlify.app/",
+      githubUrl: "https://github.com/Amankalyankar/TravelGenie",
     },
   ];
 
