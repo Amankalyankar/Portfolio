@@ -19,6 +19,17 @@ const ProjectsSection = () => {
       liveUrl: "https://travelgenie123.netlify.app/",
       githubUrl: "https://github.com/Amankalyankar/TravelGenie",
     },
+    {
+      id: 2,
+      title: "LaterList",
+      description:
+        "A full-stack web app for creating private media watchlist, provides personalized recommendations",
+      image: Laterlist_photo,
+      tags: ["flask","PostGres","Tailwind CSS"],
+      delay: 1.2,
+      liveUrl: "https://laterlist-m513.onrender.com/",
+      githubUrl: "https://github.com/Amankalyankar/LaterList",
+    },
   ];
 
   useEffect(() => {
