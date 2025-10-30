@@ -9,6 +9,8 @@ const PORT = process.env.PORT || 3001;
 // Middleware
 app.use(cors());
 app.use(express.json());
+console.log('Loaded email user:', process.env.EMAIL_USER);
+
 
 // The single route to handle the email sending logic
 app.post('/api/send-email', async (req, res) => {
