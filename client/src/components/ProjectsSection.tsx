@@ -16,7 +16,7 @@ const ProjectsSection = () => {
       image: TravelGenie_photo,
       tags: ["Flask", "React", ],
       delay: 1.2,
-      liveUrl: "https://travelgenie123.netlify.app/",
+      liveUrl: "https://travelgenie.amankalyankar.in/",
       githubUrl: "https://github.com/Amankalyankar/TravelGenie",
     },
     {
@@ -27,7 +27,7 @@ const ProjectsSection = () => {
       image: Laterlist_photo,
       tags: ["flask","PostGres","Tailwind CSS"],
       delay: 1.2,
-      liveUrl: "https://laterlist-m513.onrender.com/",
+      liveUrl: "https://laterlist.amankalyankar.in/",
       githubUrl: "https://github.com/Amankalyankar/LaterList",
     },
   ];
