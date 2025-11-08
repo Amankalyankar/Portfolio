@@ -39,7 +39,7 @@ const ContactSection = () => {
     setTimeout(() => {
       // Set the error message you requested
       setStatus('error');
-      setResponseMessage("Im trying to fix it I promise😭🙏 ");
+      setResponseMessage("Im trying to fix it I promise😭🙏!! ");
     }, 800); // Waits 0.8 seconds before showing the message
   };
 
