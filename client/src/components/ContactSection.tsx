@@ -32,36 +32,16 @@ const ContactSection = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  setStatus('sending');
-  setResponseMessage('');
+    e.preventDefault(); // Prevents the page from reloading
+    setStatus('sending'); // Shows the "Sending..." button text
 
-  try {
-    // 👇 The change is here
-    const apiUrl = import.meta.env.VITE_API_URL;
-    const response = await fetch(`${apiUrl}/api/send-email`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    });
-    
-    const result = await response.json();
-    setResponseMessage(result.message);
-
-    if (response.ok) {
-      setStatus('success');
-      setFormData({ name: '', email: '', message: '' }); // Clear form on success
-    } else {
+    // Simulate a short "sending" delay
+    setTimeout(() => {
+      // Set the error message you requested
       setStatus('error');
-    }
-  } catch (error) {
-    console.error('Submission error:', error);
-    setStatus('error');
-    setResponseMessage('An unexpected error occurred. Please try again.');
-  }
-};
+      setResponseMessage("Im trying to fix it I promise😭🙏 ");
+    }, 800); // Waits 0.8 seconds before showing the message
+  };
 
   const contactInfo = [
     { icon: Mail, label: "Email", value: "amankalyankar06@gmail.com", href: "mailto:amankalyankar06@gmail.com" },

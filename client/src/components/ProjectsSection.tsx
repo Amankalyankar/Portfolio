@@ -15,7 +15,7 @@ const ProjectsSection = () => {
         "A travel assistant that crafts personalized, day-by-day itineraries in seconds. It uses AI to build the perfect trip based on your destination and interests.",
       image: TravelGenie_photo,
       tags: ["Flask", "React", ],
-      delay: 1.2,
+      
       liveUrl: "https://travelgenie.amankalyankar.in/",
       githubUrl: "https://github.com/Amankalyankar/TravelGenie",
     },
@@ -26,7 +26,7 @@ const ProjectsSection = () => {
         "A full-stack web app for creating private media watchlist, provides personalized recommendations",
       image: Laterlist_photo,
       tags: ["flask","PostGres","Tailwind CSS"],
-      delay: 1.2,
+      
       liveUrl: "https://laterlist.amankalyankar.in/",
       githubUrl: "https://github.com/Amankalyankar/LaterList",
     },

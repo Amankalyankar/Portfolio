@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Code, Palette, Server, Gamepad2, Code2, BrainCircuit, Lightbulb } from "lucide-react";
-import profilePhoto from "@/assets/image.jpg"; // Make sure you have an image at this path
+import profilePhoto from "@/assets/image.avif"; // Make sure you have an image at this path
 
 const AboutSection = () => {
   const [visibleWords, setVisibleWords] = useState(0);

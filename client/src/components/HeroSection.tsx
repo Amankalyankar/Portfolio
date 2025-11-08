@@ -1,11 +1,13 @@
+// src/components/HeroSection.tsx
 import { useState, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
-import SplineLoader from "./SplineLoader";
+import FloatingIcons from "./FloatingIcons"; // Make sure this is imported
 
 const HeroSection = () => {
   const [typedText, setTypedText] = useState("");
   const fullText = "Where the love for gaming meets the art of development.";
 
+  // 1. 👇 --- FIX: The typing animation logic is restored here
   useEffect(() => {
     let currentIndex = 0;
     const typingInterval = setInterval(() => {
@@ -18,15 +20,19 @@ const HeroSection = () => {
     }, 50);
 
     return () => clearInterval(typingInterval);
-  }, []);
+  }, []); // The empty dependency array is correct
 
   return (
+    // 2. 👇 --- FIX: Reverted to your original layout structure
     <section
       id="home"
       className="min-h-screen relative overflow-hidden bg-black"
     >
+      {/* This container uses relative/block for the 2-column layout */}
       <div className="relative flex flex-col lg:block w-full h-full min-h-screen pt-24 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32">
         
+        {/* --- 1. TEXT CONTENT (LEFT COLUMN) --- */}
+        {/* This div is absolutely positioned on large screens */}
         <div className="flex flex-col justify-center text-center lg:text-left w-full z-10 lg:absolute lg:left-0 lg:top-0 lg:w-1/2 lg:h-screen lg:pl-24 xl:pl-32">
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-6 gradient-text animate-fade-in break-words">
             Creative
@@ -73,11 +79,12 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Right side with Spline scene (Robot) */}
-        {/* CHANGED: Added scale-75 to shrink the model on mobile, and lg:scale-100 to reset it on desktop */}
-        <div className="w-full h-[50vh] flex items-center justify-center lg:absolute lg:top-0 lg:right-0 lg:w-1/2 lg:h-screen lg:pt-20 transform scale-75 lg:scale-100">
-            <SplineLoader scene="https://prod.spline.design/SqdJqi-TwKVKAbeF/scene.splinecode" />
+        {/* --- 2. GSAP ANIMATION (RIGHT COLUMN) --- */}
+        {/* This div is also absolutely positioned on large screens */}
+        <div className="hidden lg:flex items-center justify-center lg:absolute lg:right-0 lg:top-0 lg:w-1/2 lg:h-screen z-0">
+          <FloatingIcons />
         </div>
+
       </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-10 hidden lg:block">
@@ -87,4 +94,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default HeroSection

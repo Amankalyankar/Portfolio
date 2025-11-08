@@ -1,17 +1,18 @@
-# Dependencies - Ignores all node_modules folders
-node_modules/
-
-# Environment Variables - Ignores all .env files
-.env
-.env.*
-/server/.env
-/client/.env
-
-# Production build folders
-dist
-dist-ssr
+# IDE and OS files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
 *.local
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
+#
+# === Frontend (Node.js) ===
+#
 # Logs
 logs
 *.log
@@ -21,13 +22,24 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# Dependencies
+node_modules
+client/node_modules
+
+# Build output
+dist
+dist-ssr
+
+#
+# === Backend (Python) ===
+#
+# Environment variables - VERY IMPORTANT
+.env
+
+# Virtual environment
+venv/
+/venv/
+
+# Python cache
+__pycache__/
+*.pyc
