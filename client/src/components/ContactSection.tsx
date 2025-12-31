@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Instagram, Linkedin} from 'lucide-react';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -51,7 +51,8 @@ const ContactSection = () => {
 
   const socialLinks = [
     { name: 'GitHub', icon: Github, href: 'https://github.com/Amankalyankar', hoverClass: 'hover:bg-black' },
-    { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/a.man_kalyankar', hoverClass: 'hover-bg-instagram' },
+    { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/a.man_kalyankar', hoverClass: 'hover:bg-[#E1306C]' },
+    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/in/aman-kalyankar-297363324/', hoverClass: 'hover:bg-[#0A66C2]' },
   ];
   
   return (
